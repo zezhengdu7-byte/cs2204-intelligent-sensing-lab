@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designpage</title>
+    <link rel="stylesheet" href="../CSS/design.css">
+</head>
+<body>
+    <!-- header -->
+    <div id="content">
+        <header>
+            <img src="./image/logo.png" alt="a logo" width="550" height="150">
+            <h1>Intelligen Sensing Lab</h1>
+        </header>
+        <!-- navigation bar -->
+        <nav>
+            <ul class="nav-list">
+                <li><a href="./Homepage.html">Home</a></li>
+                <li><a href="./Aboutpage.html">About</a></li>
+                <li><a href="./Applypage.html">Apply</a></li>
+                <li><a href="./Visitpage.html">Visit</a></li>
+                <li><a href="./Informationpage.html">Information</a></li>
+                <li><a href="./Contactpage.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- name,SID -->
+         <div id="info">
+            <h1>Design Page</h1>
+            <h2>Name:Zezheng Du</h2> 
+            <h2>SID:60180888</h2>
+            <br>
+            <h2>Two ways of event handler setup:</h2>
+            <ul>
+                <li><span>By HTML:</span>Applypage.html,line31,line54......</li>
+                <li><span>By Javascript:</span>Visitpage.html,line88......</li>
+            </ul><br>
+            <h2>ES6 features are used:</h2>
+            <ul>
+                <li><span>let(apply.js,line57,line70) and const(apply.js,line46-50):</span><br>
+                let provides block‑scoped variables so each loop iteration or block has its own value, which prevents bugs caused by variable leakage in ES5; const declares fixed references that cannot be reassigned, which is ideal for DOM elements or configuration objects like my division map.</li>
+                <li><span>NodeList.forEach(apply.js,line79)</span><br>
+                    In ES5, querySelectorAll returns a NodeList that does not support forEach. ES6 extended NodeList so it behaves more like an array. I used forEach here to loop through all buttons and attach event handlers in a cleaner way than a traditional for loop.</li>
+                <li><span>Element.closest()(apply.js,line81,line86)</span><br>
+                    closest() is an ES6/DOM Level 4 method that finds the nearest ancestor element matching a selector. In ES5, I would have needed a manual loop with parentNode. Here, I used closest('form') to directly find the form containing the button, which makes the code shorter and easier to read.</li>
+            </ul><br>
+            
+         </div>
+    </div>
+    <!-- footer bar -->
+    <footer>
+        <img src="./image/footer_logo.png" alt="a footer logo" width="400" height="100">
+        <p>CityU 2024 sources of images and text from Wikipedia Commons and Courtesy of Icon pack by Icons8 -- designed by <a href="./Designpage.html">Zezheng Du</a></p>
+    </footer>
+</body>
+</html>

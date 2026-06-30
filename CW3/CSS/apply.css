@@ -1,0 +1,255 @@
+#wel {
+    text-align: center;
+}
+header{
+    position:fixed;
+    z-index: 1000;
+    top:0px;
+    left: 0px;
+    background: -webkit-radial-gradient(ellipse, #b0dee6, #7dabe6); 
+    background: -moz-radial-gradient(ellipse, #b0dee6, #7dabe6);    
+    background: radial-gradient(ellipse, #b0dee6, #7dabe6);  
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-small;
+    padding:10px;
+    height: 120px;
+    width: 100%;
+}
+header img{
+    height: 80px;
+    width: auto;
+}
+footer{
+    background: -webkit-radial-gradient(ellipse, #b0dee6, #7dabe6); 
+    background: -moz-radial-gradient(ellipse, #b0dee6, #7dabe6);    
+    background: radial-gradient(ellipse, #b0dee6, #7dabe6);  
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+    left: 0px;
+    bottom: 0px;
+}
+footer a{
+    text-decoration: none;
+}
+nav{
+    position:fixed;
+    z-index: 1000;
+    top:130px;
+    left:0px;
+    width: 100%;
+    background-color: #15123d;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 40px;
+}
+
+.nav-list{
+    list-style: none;
+    display:flex
+}
+ul:not(.nav-list) {
+  list-style-type: disc;
+  padding-left: 20px; 
+}
+nav ul li a{
+    text-decoration: none;
+    color: aliceblue ;
+    padding:0 20px
+}
+nav a:hover{
+    color:red
+}
+nav a:visited{
+    color:yellow
+}
+nav a:active{
+    color:purple
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: lightgray;
+}
+#team {
+    margin-top:210px;
+    border: 1px solid rgba(36, 97, 154, 0.5);
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    margin-left: 0.5%;
+}
+
+#team h2 {
+    margin: 0.5%;
+}
+
+#team h3 {
+    border: 1px solid rgba(35, 95, 150, 0.5);
+    border-collapse: collapse;
+    border-radius: 5px 5px 0 0;
+    background-color: rgba(61, 136, 197, 0.5);
+    width: 99%;
+    text-align: center;
+    margin: 0%;
+}
+
+form {
+    border: 1px solid rgba(41, 105, 164, 0.5);
+    border-collapse: collapse;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    width: 33.13%;
+    float: left;
+}
+
+form:hover {
+    background-color: rgba(60, 140, 207, 0.2);
+}
+
+form img {
+    width: 50%;
+    margin: 2%;
+}
+
+form label,
+input {
+    margin-left: 2%;
+}
+
+form button {
+    margin-left: 2%;
+    margin-bottom: 3%;
+}
+
+#opt,
+#bio,
+#sma {
+    float: left;
+    width: 30%;
+}
+
+.part {
+    display: none;
+    width: 300%;
+}
+
+#bio .part {
+    position: relative;
+    right: 100%;
+}
+
+#sma .part {
+    position: relative;
+    right: 200%;
+}
+#opt .part{
+    position: relative;
+}
+
+
+
+
+
+
+#chosenpart {
+    clear: left;
+    margin-left: 1%;
+    margin-bottom: 1%;
+}
+
+#chosenpart a {
+    border: 2px solid rgba(69, 67, 113, 0.4);
+    border-radius: 5px;
+    padding: 2px;
+}
+
+#chosenpart a:link {
+    color: rgba(31, 30, 51, 1);
+}
+
+#chosenpart a:hover {
+    color: rgba(31, 30, 51, 1);
+}
+
+#chosenpart a:active {
+    color: rgba(31, 30, 51, 1);
+}
+
+#chosenpart a:visited {
+    color: rgba(31, 30, 51, 1);
+}
+
+table,
+th,
+td {
+    border: 1px solid rgba(25, 65, 103, 0.5);
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+th {
+    background-color: rgba(56, 132, 193, 0.4);
+}
+
+th:hover {
+    background-color: rgba(56, 132, 193, 0.2);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: white;
+}
+
+tbody tr:nth-child(odd):hover {
+    background-color: rgba(141, 219, 243, 0.2);
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(168, 232, 250, 0.6);
+}
+
+tbody tr:nth-child(even):hover {
+    background-color: rgba(164, 227, 244, 0.2);
+}
+
+#chosenpart table {
+    width: 96%;
+    margin-left: 1%;
+    table-layout: fixed !important;
+}
+
+#chosenpart th {
+    text-align: center;
+    font-weight: bold;
+}
+
+#chosenpart td:nth-child(1) { 
+    width: auto;
+    text-align: left;
+}
+
+#chosenpart td:nth-child(2) { 
+    width: auto;
+    text-align: left;
+}
+
+#chosenpart th:nth-child(3), #chosenpart td:nth-child(3) { 
+    width: 50px !important;
+    max-width: 50px !important;
+    text-align: right;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-left: 6px; 
+}
+
+
+#apply_message {
+    display: block;
+    width: 40%;
+    margin-left: 55%;
+    text-align: left;
+    color: #c00;
+    font-size: 1.05rem;
+}

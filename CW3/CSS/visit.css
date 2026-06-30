@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding:0
+}
+body{
+    background-color: lightgray;
+}
+header{
+    position:fixed;
+    z-index: 1000;
+    top:0px;
+    background: -webkit-radial-gradient(ellipse, #b0dee6, #7dabe6); 
+    background: -moz-radial-gradient(ellipse, #b0dee6, #7dabe6);    
+    background: radial-gradient(ellipse, #b0dee6, #7dabe6);  
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-small;
+    padding:10px;
+    height: 120px;
+    width: 100%;
+}
+header img{
+    height: 80px;
+    width: auto;
+}
+footer{
+    background: -webkit-radial-gradient(ellipse, #b0dee6, #7dabe6); 
+    background: -moz-radial-gradient(ellipse, #b0dee6, #7dabe6);    
+    background: radial-gradient(ellipse, #b0dee6, #7dabe6);  
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+}
+footer a{
+    text-decoration: none;
+}
+nav{
+    position:fixed;
+    z-index: 1000;
+    top:120px;
+    width: 100%;
+    background-color: #15123d;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 40px;
+}
+
+.nav-list{
+    list-style: none;
+    display:flex
+}
+ul:not(.nav-list) {
+  list-style-type: disc;
+  padding-left: 20px;
+  
+}
+nav ul li a{
+    text-decoration: none;
+    color: aliceblue ;
+    padding:0 20px
+}
+nav a:hover{
+    color:red
+}
+nav a:visited{
+    color:yellow
+}
+nav a:active{
+    color:purple
+}
+#welcome{
+    margin-top: 160px;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    background-color: #e0f7ff; 
+    padding: 20px;   
+}
+#welcome .content{
+    text-align: left;
+
+}
+#map img{
+    height: 600px;
+    width: auto;
+}
+#map{
+    width: 50%;
+    height: 600px;
+    float: left;
+    margin-bottom: 30px;
+}
+
+#text{
+    width: 50%;
+    height: 600px;
+    float: right;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+   
+}
+#reservation{
+    height: 300;
+    clear:both;
+    margin-bottom: 30px;
+    text-align: left;
+}
+#reservation h2{
+    text-align: center;
+}
+fieldset{
+    padding: 10px;
+}

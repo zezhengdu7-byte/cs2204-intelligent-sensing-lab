@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding:0
+}
+body{
+    background-color: lightgray;
+    position: relative;
+}
+header{
+    background: -webkit-radial-gradient(ellipse, #b0dee6, #7dabe6); 
+    background: -moz-radial-gradient(ellipse, #b0dee6, #7dabe6);    
+    background: radial-gradient(ellipse, #b0dee6, #7dabe6);  
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-small;
+    width: 100%;
+}
+header #img1{
+    height: 80px;
+    width: auto;
+}
+footer{
+    background: -webkit-radial-gradient(ellipse, #b0dee6, #7dabe6); 
+    background: -moz-radial-gradient(ellipse, #b0dee6, #7dabe6);    
+    background: radial-gradient(ellipse, #b0dee6, #7dabe6);  
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+}
+footer a{
+    text-decoration: none;
+}
+nav{
+    width: 100%;
+    background-color: #15123d;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 40px;
+}
+.nav-list{
+    list-style: none;
+    display:flex
+}
+ul:not(.nav-list) {
+  list-style-type: disc;
+  padding-left: 20px;
+  
+}
+nav ul li a{
+    text-decoration: none;
+    color: aliceblue ;
+    padding:0 20px
+}
+a:hover{
+    color:red
+}
+a:visited{
+    color:yellow
+}
+a:active{
+    color:purple
+}
+
+
+#info{
+    display:flex;
+    gap: 20px;
+}
+#about-img {
+  max-width: 100%;
+  height: auto;
+  max-width: 100%;
+  height: auto;
+
+}
+#welcome{
+    margin: 50px;
+    padding:20px;
+    border: 2px solid black;
+    border-radius: 24px;
+    float:left;
+    max-width: 80%;
+}
+#welcome, table {
+  flex: 1;
+}
+table {
+    margin-top: 50px;
+    margin-left: 40px;
+    width: 100%;
+    height: 100px;
+    float: right;
+    margin-bottom: 100px;
+    text-align: center;
+}
+table, tr, td, th {
+    border: 2px solid  #4b4a6c;
+    border-collapse: collapse;
+    text-align: center;
+}
+caption {
+    background-color:  #81b3db;
+    height: 40px;
+    width:100%;
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 23px;
+    font-weight: 600;
+}
+thead{
+    background-color:  #a3c8e6;
+}
+tbody:nth-child(odd){
+    background-color: lightblue;
+}
+tr:hover{
+    background-color: gray;
+}
+
+

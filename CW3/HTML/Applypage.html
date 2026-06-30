@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Intelligent Sensing Lab">
+    <link rel="stylesheet" href="../CSS/apply.css" type="text/css" media="screen">
+    <title>Applypage</title>
+    <script src="../JS/apply.js"></script>
+</head>
+<body>
+    <header>
+        <img src="./image/logo.png" alt="a logo">
+        <h1>Intelligent Sensing Lab</h1>
+    </header>
+    <nav>
+        <ul class="nav-list">
+            <li><a href="./Homepage.html">Home</a></li>
+            <li><a href="./Aboutpage.html">About</a></li>
+            <li><a href="./Applypage.html">Apply</a></li>
+            <li><a href="./Visitpage.html">Visit</a></li>
+            <li><a href="./Informationpage.html">Information</a></li>
+            <li><a href="./Contactpage.html">Contact</a></li>
+        </ul>
+        </nav>
+    <div id="wel">
+        <h2>Welcome to ISLab</h2>
+    </div>
+    <div id="team">
+        <h2>Join our cutting-edge research teams in these focus areas:</h2>
+        <div id="opt">
+            <h3 id="heading1" onclick="clickpart1()">Optical Sensing Division</h3>
+            <div class="part" id="part1">
+                <form method="get" action="#">
+                    <img src="./image/hyperspectral.png" width="200" height="200" alt="Hyperspectral Imaging Group"><br>
+                    <label for="hyperspectral">Hyperspectral Imaging Group</label><br>
+                    <input type="number" id="hyperspectral" name="Hyperspectral Imaging Group">
+                    <button type="button">rank of choice</button><br>
+                </form>
+                <form method="get" action="#">
+                    <img src="./image/lidar.png" width="200" height="200" alt="LiDAR Development Team"><br>
+                    <label for="lidar">LiDAR Development Team</label><br>
+                    <input type="number" id="lidar" name="LiDAR Development Team">
+                    <button type="button">rank of choice</button><br>
+                </form>
+                <form method="get" action="#">
+                    <img src="./image/nanophotonics.png" width="200" height="200" alt="Nanophotonics Research"><br>
+                    <label for="nanophotonics">Nanophotonics Research</label><br>
+                    <input type="number" id="nanophotonics" name="Nanophotonics Research">
+                    <button type="button">rank of choice</button><br>
+                </form>
+            </div>
+        </div>
+        <div id="bio">
+            <h3 id="heading2" onclick="clickpart2()">Bio-Sensing Division</h3>
+            <div class="part" id="part2">
+                <form method="get" action="#">
+                    <img src="./image/medical.png" width="200" height="200" alt="Medical Diagnostics Group"><br>
+                    <label for="medical">Medical Diagnostics Group</label><br>
+                    <input type="number" id="medical" name="Medical Diagnostics Group">
+                    <button type="button">rank of choice</button><br>
+                </form>
+                <form method="get" action="#">
+                    <img src="./image/environmental.png" width="200" height="200" alt="Environmental Sensors Team"><br>
+                    <label for="environmental">Environmental Sensors Team</label><br>
+                    <input type="number" id="environmental" name="Environmental Sensors Team">
+                    <button type="button">rank of choice</button><br>
+                </form>
+                <form method="get" action="#">
+                    <img src="./image/wearable.png" width="200" height="200" alt="Wearable Technology Lab"><br>
+                    <label for="wearable">Wearable Technology Lab</label><br>
+                    <input type="number" id="wearable" name="Wearable Technology Lab">
+                    <button type="button">rank of choice</button><br>
+                </form>
+            </div>
+        </div>
+        <div id="sma">
+            <h3 id="heading3" onclick="clickpart3()">Smart Sensing Division</h3>
+            <div class="part" id="part3">
+                <form method="get" action="#">
+                    <img src="./image/iot.png" width="200" height="200" alt="IoT Sensor Networks"><br>
+                    <label for="iot">IoT Sensor Networks</label><br>
+                    <input type="number" id="iot" name="IoT Sensor Networks">
+                    <button type="button">rank of choice</button><br>
+                </form>
+                <form method="get" action="#">
+                    <img src="./image/ai.png" width="200" height="200" alt="AI-Enabled Sensing"><br>
+                    <label for="ai">AI-Enabled Sensing</label><br>
+                    <input type="number" id="ai" name="AI-Enabled Sensing">
+                    <button type="button">rank of choice</button><br>
+                </form>
+            </div>
+        </div>
+    </div>
+        <div id="chosenpart">
+            <h2>Your chosen research groups:</h2>
+            <h3>Current Internship Placements:</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Division</th>
+                        <th>Research Group</th>
+                        <th>Rank</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Optical Sensing</td>
+                        <td>Hyperspectral Imaging Group</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Bio-Sensing</td>
+                        <td>Medical Diagnostics Group</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Smart Sensing</td>
+                        <td>Structural Monitoring Systems</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Total number of completed choices: 3</h3>
+            <h3>Application Deadline: 15 October 2025</h3>
+            <input type="submit" value="submit">
+            <input type="reset" value="clear">
+        </div>
+    <footer>
+        <img src="./image/footer_logo.png" alt="Intelligent Sensing Lab" width="400" height="100">
+            <p>&copy;CityU 2024 sources of images and text from Wikipedia Commons and Courtesy of Icon pack by Icons8 -- designed by <a href="./Designpage.html">Zezheng Du</a ></p >
+    </footer>
+  
+</body>
+</html>

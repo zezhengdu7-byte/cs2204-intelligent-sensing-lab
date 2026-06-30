@@ -1,0 +1,109 @@
+*{
+    margin:0;
+    padding:0
+}
+body{
+    background-color: lightgray;
+}
+header{
+    position:fixed;
+    z-index: 1000;
+    top:0px;
+    background: -webkit-radial-gradient(ellipse, #b0dee6, #5e9ae9); 
+    background: -moz-radial-gradient(ellipse, #b0dee6, #5e9ae9);    
+    background: radial-gradient(ellipse, #b0dee6, #5e9ae9);  
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-small;
+    padding:10px;
+    height: 120px;
+    width: 100%;
+}
+header img{
+    height: 80px;
+    width: auto;
+}
+footer{
+    background: -webkit-radial-gradient(ellipse, #b0dee6, #5e9ae9); 
+    background: -moz-radial-gradient(ellipse, #b0dee6, #5e9ae9);    
+    background: radial-gradient(ellipse, #b0dee6, #5e9ae9);  
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+}
+footer a{
+    text-decoration: none;
+}
+nav{
+    position:fixed;
+    z-index: 1000;
+    top:120px;
+    width: 100%;
+    background-color: #15123d;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 40px;
+}
+
+#welcome{
+    margin-top: 160px;
+}
+.nav-list{
+    list-style: none;
+    display:flex
+}
+ul:not(.nav-list) {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: aliceblue ;
+    padding:0 20px
+}
+a:hover{
+    color:red
+}
+a:visited{
+    color:yellow
+}
+a:active{
+    color:purple
+}
+
+
+span{
+    font-weight: bold;
+}
+#welcome{
+    background: -webkit-radial-gradient(ellipse, #c6c8cd, #595958); 
+    background: -moz-radial-gradient(ellipse, #c6c8cd, #686865);    
+    background: radial-gradient(ellipse, #c6c8cd, #5e5e5b);         
+}
+#basicinformation{
+    display:flex;
+    width: 100%; 
+}
+#info{
+    margin:auto;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 50px auto;
+    height: auto;
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 24px;
+    
+}
+#location{
+    height:auto;
+    width: 50%;
+   
+}
+
+

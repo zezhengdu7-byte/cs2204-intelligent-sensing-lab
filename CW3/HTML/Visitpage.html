@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitpage</title>
+    <link rel="stylesheet" href="../CSS/visit.css">
+
+</head>
+<body>
+     <!-- header -->
+    <header>
+        <img src="./image/logo.png" alt="a logo" width="550" height="150">
+        <h1>Intelligen Sensing Lab</h1>
+    </header>
+    <!-- navigation bar -->
+    <nav>
+        <ul class="nav-list">
+            <li><a href="./Homepage.html">Home</a></li>
+            <li><a href="./Aboutpage.html">About</a></li>
+            <li><a href="./Applypage.html">Apply</a></li>
+            <li><a href="./Visitpage.html">Visit</a></li>
+            <li><a href="./Informationpage.html">Information</a></li>
+            <li><a href="./Contactpage.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- welcome block -->
+     <div id="welcome">
+        <div class="content">
+            <p>Visit Intelligent Sensing Lab to witness groundbreaking research in sensor technology. Our facility features:</p><br>
+            <ul>
+                <li>Cleanroom for nanoscale sensor fabrication</li>
+                <li>Environmental testing chambers</li>
+                <li>Sensor calibration and validation center</li>
+                <li>Prototyping workshop</li>
+            </ul>
+        <br>
+            <p>During your tour, you'll:</p><br>
+
+            <ul>
+                <li>See live demonstrations of our latest sensors</li>
+                <li>Meet leading researchers in optical, bio, and smart sensing</li>
+            </ul>
+        </div>
+     </div>
+    <!-- location block -->
+     <div id="location">
+        <div id="map">
+            <img src="./image/location.png" alt="location" width="800" height="800">
+        </div>
+        <div id="text">
+            <h2>Location</h2>
+            Address: Tat Chee Avenue, Kowloon, Hong Kong SAR <br>
+            Tel: (852) 9876 5432 <br>
+            Email: visit@intelligentsensinglab.edu.hk <br>
+        </div>
+     </div>
+    <!-- reservation block -->
+     <div id="reservation">
+        <h2>Annual Open Day Registration</h2>
+        <fieldset>
+            <legend>Booking information</legend>
+            <form action="#" id="booking-information">
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data"><br>
+                <label for="time">Time:</label>
+            <select name="time" id="time">
+                <option value="9:00-11:00">9:00-11:00</option>
+                <option value="11:00-13:00">11:00-13:00</option>
+                <option value="13:00-15:00">13:00-15:00</option>
+                <option value="15:00-17:00">15:00-17:00</option>
+            </select> <br>
+            <label for="num">Number of visitors:</label>
+            <input type="text" id="num" name="num"> <br>
+            <div id="prompt"></div>
+            <input type="submit" id="submit" value="Check Availability">
+            <input type="reset" id="reset" value="Reset" onclick="f1">
+            </form>
+        </fieldset>
+     </div>
+     <script>
+       
+        var reset = document.querySelector("#reset");
+        var submit = document.querySelector("#submit");
+        const prompt = document.getElementById("prompt");
+
+        submit.onclick = function(event){
+
+            event.preventDefault(); 
+            prompt.innerHTML = "";
+            prompt.removeAttribute("style");
+
+            var date = document.querySelector("#data").value.trim();
+            var time = document.querySelector("#time").value.trim();
+            var num = parseInt(document.querySelector("#num").value,10);
+            console.log(data)
+            if (data == ""||time == ""||num == ""){
+                prompt.innerHTML = "<p>Data not completed; please re-enter</p>";
+                prompt.setAttribute('style','text-align:center;color:red;')
+                return;
+            }
+           
+            if(isNaN(num) || num < 1){
+                prompt.innerHTML = "<p>Please enter a valid number of people!</p>";
+                prompt.setAttribute('style','text-align:center;color:red;')
+                return;
+            }
+
+            if (reserve(date, time, num)) {
+                alert("Your reservation is successful!")
+            } else {
+               alert("Sorry, the reservation is full!")
+            }
+        };
+            function f1() {
+            prompt.innerHTML = "";
+            prompt.removeAttribute("style");
+            };   
+     </script>
+    <script src=" https://personal.cs.cityu.edu.hk/~cs2204/2023/cw3cs2204.js"></script>   
+    <!-- footer bar -->
+    <footer>
+        <img src="./image/footer_logo.png" alt="a footer logo" width="400" height="100">
+        <p>CityU 2024 sources of images and text from Wikipedia Commons and Courtesy of Icon pack by Icons8 -- designed by <a href="./Designpage.html">Zezheng Du</a></p>
+    </footer>
+    
+</body>
+</html>

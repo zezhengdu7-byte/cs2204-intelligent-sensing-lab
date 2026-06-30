@@ -1,0 +1,30 @@
+@media print {
+  nav,
+  #welcome-block,
+  #divisions{
+    display: none;
+  }
+  header,footer,#result-table{
+    display:block;
+    visibility: visible;
+  }
+  body {
+        margin: 2cm; 
+        font-family: "Times New Roman", serif;
+        font-size: 12pt; 
+        color: #000 ;
+        background: #fff 
+    }
+  header {
+        margin-bottom: 1cm 
+    }
+  footer {
+        margin-top: 1cm; 
+        padding: 10px 0 ;
+    }
+  h1, h2, h3 {
+        color: #000 ;
+        margin: 10px 0 ;
+        page-break-after: avoid ;
+    }
+}
