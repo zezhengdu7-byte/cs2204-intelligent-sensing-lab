@@ -1,14 +1,14 @@
 # Intelligent Sensing Lab React
 
-This repository contains the React portfolio version of the CS2204 Intelligent Sensing Lab coursework website.
+This folder contains the React portfolio version of the CS2204 Intelligent Sensing Lab coursework website.
 
-The original coursework iterations are kept separately in `cs2204-intelligent-sensing-lab`. This version focuses on the upgraded single-page React experience, with its own copied image assets under `assets/images`.
+The original coursework iterations are kept in the parent repository as `CW1`, `CW2`, and `CW3`. This version focuses on the upgraded single-page React experience, with its own copied image assets under `assets/images`.
 
 ## Live Demo
 
-After GitHub Pages is enabled, the demo URL will be:
+After GitHub Pages updates, the demo URL will be:
 
-https://zezhengdu7-byte.github.io/intelligent-sensing-lab-react/
+https://zezhengdu7-byte.github.io/cs2204-intelligent-sensing-lab/intelligent-sensing-lab-react/
 
 ## Project Structure
 
